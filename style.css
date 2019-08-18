@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+html {
+}
+
+body {
+    background: radial-gradient(white, #18212B) fixed;
+}
+
+.block {
+    margin: auto;
+    max-width: 900px;
+    width: 100%;
+    background-color: #F3DBC4;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 10px;
+}
+
+.header {
+    margin-top: 10px;
+}
+
+.header > h1, h3 {
+    color: #18212B;
+    font-family: serif;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin: 10px auto;
+}
+
+.property {
+    font-weight: bold;
+    vertical-align: center;
+    height: 25px;
+}
+
+.prop button {
+    height: 25px;
+    width: 25px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+#Y > input {
+    height: 25px;
+    width: 242px;
+    padding: 0 5px;
+}
+
+#form > .prop{
+    margin: 10px 0;
+}
+
+#form > #submit {
+    height: 25px;
+    width: 120px;
+    text-align: center;
+}
+
+.chosen {
+    border: 1px solid black;
+}
+
+.valid_field {
+    background-color: lawngreen;
+}
+
+.invalid_field {
+    background-color: orangered;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    display: none;
+    visibility: hidden;
+}
+
+#result {
+    margin: 5px auto;
+    text-align: center;
+    height: auto !important;
+}
+
+iframe {
+    width: 600px;
+}
