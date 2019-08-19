@@ -62,6 +62,7 @@ body {
 }
 
 #form > #submit {
+    margin-left: 15px;
     height: 25px;
     width: 120px;
     text-align: center;
