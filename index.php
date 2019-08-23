@@ -12,6 +12,8 @@ $_SESSION['arr'] = array();
     <link href="style.css" rel="stylesheet">
     <!-- Подключение JS -->
     <script type="text/javascript" src="form_handler.js"></script>
+    <script type="text/javascript" src="result_shower.js"></script>
+    <script type="text/javascript" src="canvas_drawer.js"></script>
 </head>
 <body onload="cl(); loadCanvas()">
 <!-- Шапка -->
@@ -41,7 +43,7 @@ $_SESSION['arr'] = array();
             </div>
             <div id="Y" class="prop">
                 <span class="property">Y</span>
-                <input id="Y_input" oninput="validateY()" name="y">
+                <input id="Y_input" oninput="validateY()" name="y" placeholder="(-5 ... 3)">
             </div>
             <div id="R" class="prop">
                 <span class="property">R</span>
