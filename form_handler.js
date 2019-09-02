@@ -4,7 +4,7 @@ let gl_x = 0;
 let gl_y = 0;
 let ord = 0;
 
-let validInputs = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "."];
+let validInputs = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", ","];
 
 function cl() {
     document.getElementById("Y_input").value = "";
@@ -48,53 +48,19 @@ function validateY() {
     let input_field = document.getElementById("Y_input");
 
     let text = input_field.value;
-    let flag = true;
 
-    let num = parseFloat(text);
-    if (isNaN(num) || num <= -5 || num >= 3) {
-        flag = false;
-    }
+    let match = text.match(/(^-[1-4]{1}[,]{1}\d{1,})|(^-[1-4]{1}$)|(^[0-2]{1}[,]{1}\d{1,})|(^[0-2]{1}$)/m);
+    console.log(match);
 
-    if (text.charAt(0) == "-") {
-        text = text.substr(1);
-    }
-
-    let dotcounter = 0;
-
-    Array.from(text).forEach(function(char){
-        let viflag = false;
-        validInputs.forEach(function(check) {
-            if (char == check) {
-                viflag = true;
-            }
-        });
-        if (!viflag) {
-            flag = false;
-        }
-        if (char == '.') {
-            dotcounter += 1;
-        }
-    });
-
-    if (dotcounter > 1) {
-        flag = false;
-    }
-
-    if (text.trim() == "") {
-        flag = false;
-    }
-
-    // 123[/123]
-
-    if (flag) {
-        validY = true;
-        input_field.classList.remove("invalid_field");
-        input_field.classList.add("valid_field");
-        gl_y = num;
-    } else {
+    if (match == null) {
         validY = false;
         input_field.classList.remove("valid_field");
         input_field.classList.add("invalid_field");
+    } else {
+        validY = true;
+        input_field.classList.remove("invalid_field");
+        input_field.classList.add("valid_field");
+        gl_y = parseFloat(text.replace(",", "."));
     }
 
     enable_button();

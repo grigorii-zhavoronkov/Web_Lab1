@@ -43,7 +43,7 @@ $_SESSION['arr'] = array();
             </div>
             <div id="Y" class="prop">
                 <span class="property">Y</span>
-                <input id="Y_input" oninput="validateY()" name="y" placeholder="(-5 ... 3)">
+                <input id="Y_input" oninput="validateY()" name="y" placeholder="(-5 ... 3)" autocomplete="off">
             </div>
             <div id="R" class="prop">
                 <span class="property">R</span>
