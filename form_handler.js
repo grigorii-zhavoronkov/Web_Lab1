@@ -50,7 +50,6 @@ function validateY() {
     let text = input_field.value;
 
     let match = text.match(/(^-[1-4]{1}[,]{1}\d{1,})|(^-[1-4]{1}$)|(^[0-2]{1}[,]{1}\d{1,})|(^[0-2]{1}$)/m);
-    console.log(match);
 
     if (match == null) {
         validY = false;

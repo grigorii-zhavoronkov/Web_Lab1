@@ -1,7 +1,14 @@
 <?php
 session_start();
 
-$_SESSION['arr'] = array();
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+$hide = false;
+
+if (!is_null($_GET['refresh']) && $_GET['refresh'] == 1) {
+    $_SESSION['arr'] = array();
+    $hide = true;
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -10,12 +17,13 @@ $_SESSION['arr'] = array();
     <title>Лаба 1</title>
     <!-- Подключение css -->
     <link href="style.css" rel="stylesheet">
+    <link href="result.css" rel="stylesheet">
     <!-- Подключение JS -->
     <script type="text/javascript" src="form_handler.js"></script>
     <script type="text/javascript" src="result_shower.js"></script>
     <script type="text/javascript" src="canvas_drawer.js"></script>
 </head>
-<body onload="cl(); loadCanvas()">
+<body onload="cl(); loadCanvas(); validateCounter(<?php print(sizeof($_SESSION['arr']) + 3) ?>)">
 <!-- Шапка -->
 <div class="content">
     <div class="header block">
@@ -39,7 +47,7 @@ $_SESSION['arr'] = array();
                     <button id="x3" type="button" onclick="chooseX(3)">3</button>
                     <button id="x4" type="button" onclick="chooseX(4)">4</button>
                 </span>
-                <input id="X_input" name="x" class="hidden" height="true">
+                <input id="X_input" name="x" class="hidden" hidden="true">
             </div>
             <div id="Y" class="prop">
                 <span class="property">Y</span>
@@ -60,8 +68,9 @@ $_SESSION['arr'] = array();
         </form>
         <canvas width="300" height="300" id="canvas"></canvas>
     </div>
-    <div class="block hidden" id="result">
-        <iframe src="" name="result" frameBorder="0" seamless scrolling="no" id="iframe"></iframe>
+    <div id="result" class="block <?php if ($hide) { print("hidden"); }?>">
+        <iframe src="show_result.php" name="result" frameBorder="0" seamless scrolling="no" id="iframe"></iframe>
+        <a href="index.php?refresh=1">Начать заново</a>
     </div>
 </div>
 </body>
