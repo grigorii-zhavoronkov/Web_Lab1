@@ -4,8 +4,6 @@ let gl_x = 0;
 let gl_y = 0;
 let ord = 0;
 
-let validInputs = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", ","];
-
 function cl() {
     document.getElementById("Y_input").value = "";
 }
@@ -24,7 +22,7 @@ function chooseX(x) {
     field.value = x;
     gl_x = x;
 
-    enable_button()
+    enable_button();
 }
 
 function chooseR(r) {
@@ -41,7 +39,7 @@ function chooseR(r) {
     field.value = r;
     ord = 120 / r;
 
-    enable_button()
+    enable_button();
 }
 
 function validateY() {
@@ -72,9 +70,3 @@ function enable_button() {
         document.getElementById("submit").disabled = true;
     }
 }
-
-/*
-add hidden x and z fields and .value = button on chooseX or chooseZ
-name = x
-name = z
- */

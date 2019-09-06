@@ -7,6 +7,10 @@ $hide = false;
 if (!is_null($_GET['refresh']) && $_GET['refresh'] == 1) {
     $_SESSION['arr'] = array();
     $hide = true;
+    header("Location: index.php");
+} elseif (is_null($_SESSION['arr']) || sizeof($_SESSION['arr']) == 0) {
+    $_SESSION['arr'] = array();
+    $hide = true;
 }
 
 ?>
@@ -23,7 +27,7 @@ if (!is_null($_GET['refresh']) && $_GET['refresh'] == 1) {
     <script type="text/javascript" src="result_shower.js"></script>
     <script type="text/javascript" src="canvas_drawer.js"></script>
 </head>
-<body onload="cl(); loadCanvas(); validateCounter(<?php print(sizeof($_SESSION['arr']) + 3) ?>)">
+<body onload="cl(); loadCanvas(); validateCounter(<?php print(sizeof($_SESSION['arr']) + 2); // doesn't work ?>); resizeIframe()">
 <!-- Шапка -->
 <div class="content">
     <div class="header block">
