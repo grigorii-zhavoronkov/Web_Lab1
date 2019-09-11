@@ -23,12 +23,12 @@ if (!is_null($_GET['refresh']) && $_GET['refresh'] == 1) {
     <meta charset="UTF-8">
     <title>Лаба 1</title>
     <!-- Подключение css -->
-    <link href="style.css" rel="stylesheet">
-    <link href="result.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/result.css" rel="stylesheet">
     <!-- Подключение JS -->
-    <script type="text/javascript" src="form_handler.js"></script>
-    <script type="text/javascript" src="result_shower.js"></script>
-    <script type="text/javascript" src="canvas_drawer.js"></script>
+    <script type="text/javascript" src="js/form_handler.js"></script>
+    <script type="text/javascript" src="js/result_shower.js"></script>
+    <script type="text/javascript" src="js/canvas_drawer.js"></script>
 </head>
 <body onload="cl(); loadCanvas(); validateCounter(<?php print($counter); ?>); resizeIframe()">
 <!-- Шапка -->

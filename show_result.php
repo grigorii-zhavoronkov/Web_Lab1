@@ -1,6 +1,6 @@
 <?php
 @session_start();
-$return = "<html lang='ru'><head><meta charset='UTF-8'><link href=\"result.css\" rel=\"stylesheet\"></head><body>";
+$return = "<html lang='ru'><head><meta charset='UTF-8'><link href=\"css/result.css\" rel=\"stylesheet\"></head><body>";
 
 $return .= "
 <table>
