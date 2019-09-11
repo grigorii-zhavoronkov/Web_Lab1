@@ -38,6 +38,6 @@ $current = array(
     "in" => $in
 );
 
-@array_push($_SESSION['arr'], $current);
+array_push($_SESSION['arr'], $current);
 
 include_once "show_result.php";
