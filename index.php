@@ -1,9 +1,17 @@
 <?php
 session_start();
 
-header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
 $hide = false;
 $counter = 2;
+
+if (!is_null($_GET['success']) && $_GET['success'] == 1) {
+    $_SESSION['flappy'] = 0;
+    header("Location: index.php");
+}
+
+if (!is_null($_SESSION['flappy']) && $_SESSION['flappy'] == 1) {
+    header("Location: flappy.php");
+}
 
 if (!is_null($_GET['refresh']) && $_GET['refresh'] == 1) {
     $_SESSION['arr'] = null;

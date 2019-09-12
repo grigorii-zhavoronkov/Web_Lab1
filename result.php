@@ -1,6 +1,10 @@
 <?php
 @session_start();
 
+if (!is_null($_SESSION['flappy']) && $_SESSION['flappy'] == 1) {
+    header("Location: flappy.php");
+}
+
 $start = microtime(true); // начало времени работы скрипта
 $startdate = date("H:i:s");
 
@@ -12,8 +16,9 @@ $r = (int)$_GET['r'];
 
 $y = str_replace(",", ".", $y); // приводим число к нормальному виду с точкой
 
-$correct = is_int($x) && is_numeric($y) && is_int($r)
-    && ($x >= -4) && ($x <= 4) && ($r >= 1) && ($r <= 5) && ($y > -5) && ($y < 3);
+$correct = in_array($_GET['x'], ['-4', '-3', '-2', '-1', '0', '1', '2', '3', '4']) &&
+    in_array($_GET['r'], ['1', '2', '3', '4', '5']) && is_int($x) && is_numeric($y) && is_int($r) &&
+    ($x >= -4) && ($x <= 4) && ($r >= 1) && ($r <= 5) && ($y > -5) && ($y < 3);
 
 if ($correct) {
     if ($x >= 0 && $y >= 0 && $x <= $r / 2 && $y <= $r) {
@@ -39,5 +44,10 @@ $current = array(
 );
 
 array_push($_SESSION['arr'], $current);
+
+if (!$correct) {
+    $_SESSION['flappy'] = 1;
+    echo "<script>parent.document.location.href = 'flappy.php'</script>";
+}
 
 include_once "show_result.php";

@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0d0e83d-9eac-486d-8789-89b1d43b18b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/flappy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/flappy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flappy_bird_res/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flappy_bird_res/bird.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flappy_bird_res/tube.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/canvas_drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/canvas_drawer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form_handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/form_handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy.php" beforeDir="false" afterPath="$PROJECT_DIR$/flappy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/result.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_shower.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/result_shower.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/show_result.php" beforeDir="false" afterPath="$PROJECT_DIR$/show_result.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/flappy.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/flappy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/form_handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/form_handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result.php" beforeDir="false" afterPath="$PROJECT_DIR$/result.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,26 +28,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="72" />
+            <state relative-caret-position="540">
+              <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flappy_bird_res/bird.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+            <state relative-caret-position="720">
+              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flappy_bird_res/tube.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flappy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+            <state relative-caret-position="60">
+              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -56,8 +65,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/flappy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            <state relative-caret-position="136">
+              <caret line="34" column="66" lean-forward="true" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -65,17 +74,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/canvas_drawer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/result_shower.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="-12">
+              <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -83,17 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/show_result.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="72" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="645">
+              <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -122,10 +113,11 @@
         <option value="$PROJECT_DIR$/result_shower.js" />
         <option value="$PROJECT_DIR$/form_handler.js" />
         <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/flappy.html" />
+        <option value="$PROJECT_DIR$/js/form_handler.js" />
+        <option value="$PROJECT_DIR$/show_result.php" />
         <option value="$PROJECT_DIR$/result.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/flappy.html" />
-        <option value="$PROJECT_DIR$/show_result.php" />
         <option value="$PROJECT_DIR$/js/flappy.js" />
         <option value="$PROJECT_DIR$/flappy.php" />
       </list>
@@ -157,6 +149,16 @@
             <path>
               <item name="Web_Lab1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Web_Lab1" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Lab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Lab1" type="462c0819:PsiDirectoryNode" />
+              <item name="flappy_bird_res" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Web_Lab1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Web_Lab1" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -175,11 +177,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/imgs" />
+      <recent name="$PROJECT_DIR$/flappy_bird_res" />
+      <recent name="$PROJECT_DIR$/bird" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/imgs" />
       <recent name="$PROJECT_DIR$/css" />
-      <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$/answers_res" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -214,7 +216,7 @@
       <workItem from="1567798770931" duration="8000" />
       <workItem from="1568108012719" duration="364000" />
       <workItem from="1568187919556" duration="546000" />
-      <workItem from="1568194300995" duration="10424000" />
+      <workItem from="1568194300995" duration="18679000" />
     </task>
     <task id="LOCAL-00001" summary="Added index.html&#10;Fix style.css">
       <created>1566202779716</created>
@@ -258,11 +260,18 @@
       <option name="project" value="LOCAL" />
       <updated>1568191628708</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added directories for css and js files&#10;Flappy bird started">
+      <created>1568232316304</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568232316305</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66581000" />
+    <option name="totallyTimeSpent" value="74836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -322,7 +331,8 @@
     <MESSAGE value="After reloading page results saves&#10;Added new button to refresh results" />
     <MESSAGE value="FINAL FIX" />
     <MESSAGE value="Lil final fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lil final fix" />
+    <MESSAGE value="Added directories for css and js files&#10;Flappy bird started" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added directories for css and js files&#10;Flappy bird started" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/answers_res/img1.png">
@@ -359,12 +369,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/form_handler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="37" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="37" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/imgs/Bird.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/imgs/Background.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/js/result_shower.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -375,56 +384,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/result.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+        <state relative-caret-position="468">
+          <caret line="81" selection-start-line="81" selection-end-line="86" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/show_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="72" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
+        <state relative-caret-position="645">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/Bird.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/imgs/Background.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/js/canvas_drawer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
+        <state relative-caret-position="-12">
+          <caret line="51" column="24" lean-forward="true" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/form_handler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="94" selection-start-line="49" selection-start-column="94" selection-end-line="49" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flappy_bird_res/tube.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flappy_bird_res/bird.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flappy_bird_res/mybird.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/flappy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        <state relative-caret-position="136">
+          <caret line="34" column="66" lean-forward="true" selection-start-line="34" selection-start-column="66" selection-end-line="34" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="45" lean-forward="true" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/flappy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="43" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="60">
+          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
         </state>
       </provider>
     </entry>
