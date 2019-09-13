@@ -1,6 +1,6 @@
 <?php
 @session_start();
-$return = "<html lang='ru'><head><meta charset='UTF-8'><link href=\"css/result.css\" rel=\"stylesheet\"></head><body>";
+$return = "<html lang='ru'><head><title>Result</title><meta charset='UTF-8'><link href=\"css/result.css\" rel=\"stylesheet\"></head><body>";
 
 $return .= "
 <table>
@@ -30,7 +30,7 @@ for ($i = sizeof($_SESSION['arr']) - 1; $i >= 0; $i--) {
                 <td>" . $cx . "</td>
                 <td>" . $cy . "</td>
                 <td>" . $cr . "</td>
-                <td>" . $cstart . "</td>
+                <td>" . $cstart . " UTC</td>
                 <td>" . $cwork . "</td>
                 <td>" . $cin . "</td>
             </tr>

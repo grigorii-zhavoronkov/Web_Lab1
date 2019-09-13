@@ -89,13 +89,13 @@ function setup() {
         clear();
         drawBackground();
         bird = new Bird(75, 300);
-        document.body.addEventListener("keyup", function (e) {
-            if (e.key == " " && started) {
+        document.body.addEventListener("keydown", function (e) {
+            if (e.key === " " && started) {
                 bird.velocity -= 3.5;
                 if (bird.velocity < minvelocity) {
                     bird.velocity = minvelocity;
                 }
-            } else if (e.key == " ") {
+            } else if (e.key === " ") {
                 started = true;
                 start();
             }
@@ -115,14 +115,14 @@ function loop() {
     drawBackground();
     tube_counter += 1;
     point_counter += 1;
-    if (tube_counter % 250 == 0) {
+    if (tube_counter % 250 === 0) {
         createTube();
         tube_counter = 0;
     }
-    if (point_counter == 0) {
+    if (point_counter === 0) {
         point_counter = -250;
         points += 1;
-        if (points == 10) {
+        if (points === 10) {
             document.getElementById("back").classList.remove("hidden");
         }
     }
@@ -156,15 +156,16 @@ function loop() {
 
 function isCollision() {
     let right = bird.x + radius/2;
+    let left = bird.x - radius/2;
     let top = bird.y - radius/2;
     let bottom = bird.y + radius/2;
     for (let i = 0; i < tubes.length; i++) {
         let tube_x = tubes[i].x;
         let tube_y = tubes[i].y;
-        if (!tubes[i].isPair && right >= tube_x && right <= tube_x + 50 &&
+        if (!tubes[i].isPair && right >= tube_x && left <= tube_x + 50 &&
             bottom >= tube_y) {
             return true;
-        } else if (tubes[i].isPair && right >= tube_x && right <= tube_x + 50 &&
+        } else if (tubes[i].isPair && right >= tube_x && left <= tube_x + 50 &&
             top <= tube_y) {
             return true;
         }

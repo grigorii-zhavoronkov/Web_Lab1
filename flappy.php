@@ -23,6 +23,7 @@ if (!(!is_null($_SESSION['flappy']) && $_SESSION['flappy'] == 1)) {
 <body>
 <h3>Пройдите flappy bird до 10 очков и вернитесь на главную страницу</h3>
 <p>Считайте это наказанием за то, что вы сломали мою лабу</p>
+<p><b>Управление: </b><br><b>Пробел</b> - прыжок</p>
 <canvas id="canvas" width="400" height="600"></canvas>
 <a href="index.php?success=1" class="hidden" id="back">Вернуться</a>
 </body>
